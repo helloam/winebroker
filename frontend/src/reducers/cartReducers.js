@@ -1,8 +1,10 @@
-import { CART_ADD_ITEM } from '../constants/cartConstants'
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants'
 
 export const cartReducer = (state = { cartItems: []}, action) => {
     switch(action.type){
         case CART_ADD_ITEM:
+            //We put payload in a variable, then find if it exists, and we can get from our state,
+            //in our cartItems where we want to find for each of items in current state  where x.product that is equal to current item.product.
             const item = action.payload
 
             const existItem = state.cartItems.find(x => x.product === item.product)
@@ -10,6 +12,8 @@ export const cartReducer = (state = { cartItems: []}, action) => {
             if(existItem) {
                 return {
                     ...state,
+                    //Mapping through cart items. If x.product (current item ID) is equal to existing item, 
+                    //then return item for this iteration, else it will be x.
                     cartItems: state.cartItems.map(x => x.product === existItem.product ? item : x)
                 }
             } else {
@@ -18,6 +22,11 @@ export const cartReducer = (state = { cartItems: []}, action) => {
                     cartItems: [...state.cartItems, item]
                 }
             }
+            case CART_REMOVE_ITEM:
+                return {
+                    ...state,
+                    cartItems: state.cartItems.filter((x) => x.product !== action.payload)
+                }
         default: 
             return state
     }
