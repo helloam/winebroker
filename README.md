@@ -27,6 +27,9 @@ A fictitious e-commerce website built with Mongo DB, Express, React, Node and Re
 - To import data: Run ***npm run data:import***
 - To destroy data: Run ***npm run data:destroy***
 
+## Testing Payment at Checkout
+- Sign up for a [Paypal developer account](https://developer.paypal.com/developer/accounts) to use a fake payment credit card and bank account information.
+
 ## For Future Development
 - About section
 - Contact Us section
