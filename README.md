@@ -36,7 +36,7 @@ A fictitious e-commerce website built with Mongo DB, Express, React, Node and Re
 
 ## Credits:
 
-This app was created with the guidance of Brad Traversy's [MERN e-commerce from Scratch course on Udemy](https://www.udemy.com/course/mern-ecommerce). As a next phase, I am looking to expand features and functionality by adding the elements listed above for future development.
+This app was created with the guidance of Brad Traversy's [MERN e-commerce from Scratch course on Udemy](https://www.udemy.com/course/mern-ecommerce). As a next phase, I am looking to expand features and functionality some of which are listed above for future development.
 
 ## Questions or Comments?
 
