@@ -1,6 +1,5 @@
 # The Wine Broker
 
-https://thewinebroker.herokuapp.com/
 
 ## Description
 A fictitious e-commerce website built with Mongo DB, Express, React, Node and Redux where customers can create an account in order to purchase wine.
